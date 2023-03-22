@@ -1,0 +1,52 @@
+// pegination_area start
+.pegination_area {
+    border: $border;
+    background-color: $off_white;
+    padding-bottom: 90px;
+    .pegination_content {
+        border: $border;
+        ul {
+            border: $border;
+            display: flex;
+            justify-content: center;
+            gap: 1px;
+            li {
+                border: $border;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                a {
+                    border: $border;
+                    font-family: $Poppins_Medium;
+                    font-size: 16px;
+                    line-height: 16px;
+                    text-transform: capitalize;
+                    color: $solid_white;
+                    color: $navy;
+                    // color: $navy;
+                    height: 35px;
+                    border: 1px solid $navy;
+                    // background-color: $navy;
+                    border-radius: 0px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    transition-duration: .4s;
+                    &:hover{
+                        background-color: $yellow;
+                    }
+                }
+                .previous_next {
+                    border: $border;
+                    // padding: 7px 7px;
+                    padding: 0px 10px;
+                    border: 1px solid $navy;
+                }
+                .pegination_number {
+                    width: 35px;
+                }
+            }
+        }
+    }
+}
+// pegination_area end

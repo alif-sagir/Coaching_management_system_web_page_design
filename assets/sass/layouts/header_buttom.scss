@@ -1,0 +1,72 @@
+// header_area_buttom start
+.header_area_buttom {
+    border: $border;
+    background-color: $navy;
+
+    .header_area_buttom_content {
+        border: $border;
+        padding: 10px 0px;
+    }
+}
+
+// logo area start
+.logo {
+    border: $border;
+
+    img {
+        border: $border;
+    }
+}
+
+// logo area end
+// search_area start
+.search_area_content {
+    border: $border;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .search_area {
+        border: $border;
+        width: 500px;
+        position: relative;
+        align-items: center;
+        display: flex;
+
+        input {
+            border: $border;
+            width: 100%;
+            height: 35px;
+            font-size: 14px;
+            font-family: $Poppins_Regular;
+            color: $navy;
+            padding: 0px 40px 0px 10px;
+            outline: 0;
+            border-radius: 4px;
+        }
+
+        .button_area {
+            border: $border;
+            position: absolute;
+            right: 0;
+            top: 0;
+            align-items: center;
+            display: flex;
+            height: 100%;
+            padding: 10px;
+            background-color: $yellow;
+            border-radius: 4px;
+
+            i {
+                border: $border;
+                color: $navy;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+    }
+}
+
+// search_area end
+// header_area_buttom end

@@ -1,0 +1,31 @@
+// copyright_area start
+.copyright_area{
+    border: $border;
+    background-color: #041a34;
+    padding: 25px 0px;
+    .copyright_content{
+        border: $border;
+        text-align: center;
+        p{
+            border: $border;
+            font-family: $Poppins_Regular;
+            font-size: 13px;
+            line-height: 13px;
+            color: $dark_light;
+            text-transform: capitalize;
+            // word-spacing: 2px;
+            letter-spacing: 2px;
+            span{
+                a{
+                    border: $border;
+                    color: $solid_white;
+                    transition-duration: .4s;
+                    &:hover{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+// copyright_area end

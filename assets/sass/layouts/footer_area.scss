@@ -1,0 +1,343 @@
+// footer_area start
+.footer_area {
+    border: $border;
+    background-color: $navy;
+    padding: 80px 0px;
+
+    .footer_area_content {
+        border: $border;
+    }
+}
+
+// footer_area_left start 
+.footer_area_left {
+    border: $border;
+
+    // logo area start
+    .logo {
+        border: $border;
+        display: contents;
+
+        img {
+            border: $border;
+        }
+    }
+
+    // footer_discription_area start
+    .footer_discription_area {
+        border: $border;
+        margin: 45px 0px;
+
+        p {
+            border: $border;
+            font-family: $Poppins_Regular;
+            font-size: 14px;
+            line-height: 24px;
+            color: $solid_white;
+            // text-transform: capitalize;
+        }
+    }
+
+    // footer_social_link start
+    .footer_social_link {
+        // border: $border;
+
+        ul {
+            // border: $border;
+            display: flex;
+            gap: 15px;
+
+            li {
+                border: $border;
+
+                a {
+                    border: $border;
+                    width: 25px;
+                    height: 25px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid #575796;
+                    transition-duration: .4s;
+
+                    &:hover {
+                        background-color: $yellow;
+                        border: 1px solid $yellow;
+                    }
+
+                    &:hover i {
+                        color: $navy;
+                    }
+
+                    i {
+                        border: $border;
+                        font-size: 13px;
+                        color: $off_white;
+                        color: #8d8d8d;
+                        transition-duration: .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer_area_left end
+// featured_links_area start
+.featured_links_area {
+    border: $border;
+
+    .featured_links_title {
+        border: $border;
+        margin-bottom: 20px;
+
+        h2 {
+            border: $border;
+            font-family: $Poppins_Medium;
+            font-size: 20px;
+            line-height: 20px;
+            color: $solid_white;
+            text-transform: capitalize;
+        }
+    }
+
+    .featured_links {
+        border: $border;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .featured_links_content {
+            border: $border;
+
+            ul {
+                border: $border;
+
+                li {
+                    border: $border;
+                    margin: 10px 0px;
+
+                    span {
+                        // border: $border;
+
+                        i {
+                            border: $border;
+                            color: $yellow;
+                            font-size: 14px;
+                        }
+                    }
+
+                    a {
+                        border: $border;
+                        font-family: $Poppins_Regular;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $solid_white;
+                        // color: #8d8d8d;
+                        text-transform: capitalize;
+                        padding: 5px;
+                        transition-duration: .4s;
+
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// featured_links_area end
+
+// course_links_area start
+.course_links_area {
+    border: $border;
+
+    .course_links_title {
+        border: $border;
+        margin-bottom: 20px;
+
+        h2 {
+            border: $border;
+            font-family: $Poppins_Medium;
+            font-size: 20px;
+            line-height: 20px;
+            color: $solid_white;
+            text-transform: capitalize;
+        }
+    }
+
+    .course_links {
+        border: $border;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .course_links_content {
+            border: $border;
+
+            ul {
+                border: $border;
+
+                li {
+                    border: $border;
+                    margin: 10px 0px;
+
+                    span {
+                        // border: $border;
+
+                        i {
+                            border: $border;
+                            color: $yellow;
+                            font-size: 14px;
+                        }
+                    }
+
+                    a {
+                        border: $border;
+                        font-family: $Poppins_Regular;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $solid_white;
+                        // color: #8d8d8d;
+                        text-transform: capitalize;
+                        padding: 5px;
+                        transition-duration: .4s;
+
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// course_links_area end
+
+// contact_area start
+.contact_area {
+    border: $border;
+
+    .contact_area_title {
+        border: $border;
+        margin-bottom: 20px;
+
+        h2 {
+            border: $border;
+            font-family: $Poppins_Medium;
+            font-size: 20px;
+            line-height: 20px;
+            color: $solid_white;
+            text-transform: capitalize;
+        }
+    }
+
+    .contact_content {
+        border: $border;
+
+        ul {
+            border: $border;
+
+            li {
+                border: $border;
+
+                span {
+                    border: $border;
+                    font-family: $Poppins_Regular;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $solid_white;
+                    text-transform: capitalize;
+                }
+
+                .icon {
+                    margin-right: 20px;
+
+                    i {
+                        border: $border;
+                        color: $yellow;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .address {
+                margin: 10px 0px 30px 0px;
+
+                .line1 {}
+
+                .line2 {
+                    display: block;
+                }
+
+                .line3 {
+                    // display: block;
+                }
+            }
+
+            .phone_number_and_icon {
+                border: $border;
+                display: flex;
+                margin: 10px 0px;
+
+                .icon {
+                    border: $border;
+
+                    i {}
+                }
+
+                .phone_number {
+                    border: $border;
+
+                    a {
+                        border: $border;
+                        display: block;
+                        font-family: $Poppins_Regular;
+                        font-size: 14px;
+                        color: $solid_white;
+                        margin-bottom: 10px;
+                        transition-duration: .4s;
+
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+
+            .email_and_icon {
+                border: $border;
+                display: flex;
+
+                .icon {
+                    border: $border;
+
+                    i {
+                        border: $border;
+                    }
+                }
+
+                .email {
+                    border: $border;
+
+                    a {
+                        border: $border;
+                        font-family: $Poppins_Regular;
+                        font-size: 14px;
+                        color: $solid_white;
+                        transition-duration: .4s;
+
+                        &:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// contact_area end
+
+// footer_area end

@@ -1,0 +1,42 @@
+// nav_area start
+.nav_area {
+    border: $border;
+    background-color: $off_white;
+
+    .nav_area_content {
+        border: $border;
+        padding: 10px;
+
+        ul {
+            border: $border;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+
+            li {
+                border: $border;
+                align-items: center;
+                display: flex;
+
+                .nav_item {
+                    border: $border;
+                    font-family: $Poppins_Medium;
+                    font-size: 16px;
+                    line-height: 16px;
+                    text-transform: capitalize;
+                    color: $navy;
+                    padding: 7px 7px;
+                    transition-duration: .4s;
+                    &:hover{
+                        background-color: $navy;
+                        color: $solid_white;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// nav_area end

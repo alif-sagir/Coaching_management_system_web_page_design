@@ -1,0 +1,106 @@
+// academic_partners_area start
+.academic_partners_area {
+    border: $border;
+    background-color: $yellow;
+    padding: 70px 0px;
+    .academic_partners_content {
+        border: $border;
+    }
+}
+
+// academic_partners_left_area start
+.academic_partners_left_area {
+    border: $border;
+
+    // academic_partners_logo_area start
+    .academic_partners_logo_area {
+        border: $border;
+        ul {
+            border: $border;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2px;
+            background: $solid_white;
+            padding: 3px;
+            li {
+                border: $border;
+
+                a {
+                    border: $border;
+                    width: 101px;
+                    height: 102px;
+
+                    img {
+                        border: $border;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // academic_partners_logo_area end
+}
+
+// academic_partners_left_area end
+// academic_partners_right_area start
+.academic_partners_right_area {
+    border: $border; 
+    text-align: center;
+    height: 100%;
+    background-color: $navy;
+    align-items: center;
+    display: flex;
+    .text_button_area{
+        .text {
+            border: $border;
+    
+            h2 {
+                border: $border;
+                font-family: $Poppins_Medium;
+                font-size: 35px;
+                line-height: 45px;
+                color: $solid_white;
+                text-transform: capitalize;
+                span{
+                    font-family: $Poppins_SemiBold;
+                }
+            }
+        }
+    
+        .join_button_area {
+            border: $border;
+            margin-top: 30px;
+            form {
+                border: $border;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                .join_button {
+                    border: $border;
+                    font-family: $Poppins_Medium;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: $navy;
+                    text-transform: uppercase;
+                    background-color: $yellow;
+                    padding: 15px 25px;
+                    transition-duration: .4s;
+                    border: 2px solid $yellow;
+                    &:hover{
+                        background-color: transparent;
+                        color: $solid_white;
+                    }
+                }
+            }
+        }
+    }
+  
+}
+
+
+// academic_partners_right_area end
+// academic_partners_area end
+

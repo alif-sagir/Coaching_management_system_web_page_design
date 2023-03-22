@@ -1,0 +1,118 @@
+// teacher_area start
+.teacher_area {
+    border: $border;
+    background-color: $off_white;
+    padding-bottom: 50px;
+}
+
+// teacher_area_title start
+.teacher_area_title {
+    border: $border;
+    padding: 50px 0px;
+    text-align: center;
+    h2 {
+        border: $border;
+        font-family: $Poppins_Medium;
+        font-size: 30px;
+        line-height: 30px;
+        color: $navy;
+        text-transform: capitalize;
+    }
+}
+
+// teacher_area_title end
+// teacher_area_content start
+.teacher_area_content {
+    border: $border;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    // teacher start
+    .teacher {
+        border: $border;
+        width: 260px;
+
+        .teacher_img {
+            border: $border;
+            height: 270px;
+
+            img {
+                border: $border;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .teacher_discription {
+            border: $border;
+            // background-color: $solid_white;
+            text-align: center;
+            padding: 25px 0px;
+            .teacher_name {
+                a {
+                    border: $border;
+                    font-family: $Poppins_Medium;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: $navy;
+                    text-transform: capitalize;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+
+            .teacher_title {
+                margin: 20px 0px;
+                p {
+                    border: $border;
+                    font-family: $Poppins_Regular;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: $black;
+                    text-transform: capitalize;
+                }
+            }
+
+            .teacher_contact {
+                border: $border;
+
+                ul {
+                    border: $border;
+                    display: flex;
+                    justify-content: center;
+                    gap: 8px;
+                    li {
+                        border: $border;
+
+                        a {
+                            border: $border;
+                            width: 30px;
+                            height: 30px;
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
+                            background-color: $yellow;
+                            transition-duration: 0.4s;
+                            &:hover {
+                                background-color: $navy;
+                            }
+                            i {
+                                border: $border;
+                                color: $solid_white;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // teacher end
+}
+
+// teacher_area_content end
+// teacher_area end

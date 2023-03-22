@@ -1,0 +1,207 @@
+// header_top start
+.header_top {
+    border: $border;
+    background-color: $solid_white;
+
+    .header_top_content {
+        border: $border;
+        padding: 10px 0px;
+    }
+}
+
+//header area same_content_desine start
+.logo {
+    border: $border;
+    display: flex;
+    margin-right: 5px;
+    i {
+        font-size: 12px;
+        line-height: 12px;
+        color: $yellow;
+    }
+}
+
+.title {
+    font-family: $Poppins_Regular;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: capitalize;
+    color: $navy;
+}
+
+.colon_area {
+    font-family: $Poppins_Regular;
+    font-size: 12px;
+    line-height: 12px;
+    color: $navy;
+}
+
+.value {
+    font-family: $Poppins_Regular;
+    font-size: 12px;
+    line-height: 12px;
+    color: $navy;
+}
+
+.contact_and_email {
+    border: $border;
+    display: flex;
+
+    .contact_area {
+        border: $border;
+        align-items: center;
+        display: flex;
+        padding: 5px 0px;
+        margin-right: 15px;
+        &:hover .contact_title{
+            color: $yellow;
+           }
+        &:hover .colon_area{
+            color: $yellow;
+           }
+        &:hover .contact_number{
+            color: $yellow;
+           }
+        .logo {
+
+            i {
+                border: $border;
+            }
+        }
+
+        .contact_title {
+            border: $border;
+            transition-duration: .4s;
+        }
+
+        .colon_area {
+            border: $border;
+            margin: 0px 3px;
+            transition-duration: .4s;
+        }
+
+        .contact_number {
+            border: $border;
+            transition-duration: .4s;
+        }
+    }
+
+    // contact_area end
+    // email_area start
+    .email_area {
+        border: $border;
+        align-items: center;
+        display: inline-flex;
+        padding: 5px 0px;
+        position: relative;
+       padding-left: 15px;
+       &:hover .contact_title{
+        color: $yellow;
+       }
+       &:hover .colon_area{
+        color: $yellow;
+       }
+       &:hover .email_address{
+        color: $yellow;
+       }
+        &::before{
+            content:"";
+            width: 1px;
+            height: 15px;
+            background-color: $navy;
+            top: 5px;
+            left: 0px;
+            position: absolute;
+        }
+        .logo {
+            i {
+                border: $border;
+            }
+        }
+
+        .contact_title {
+            border: $border;
+            transition-duration: .4s;
+        }
+
+        .colon_area {
+            border: $border;
+            transition-duration: .4s;
+        }
+
+        .email_address {
+            border: $border;
+            transition-duration: .4s;
+        }
+    }
+
+    // email_area end
+
+}
+
+// contact_and_email area end
+
+// login_and_apply_area start
+.login_and_apply_area {
+    border: $border;
+    height: 100%;
+    // login_area start
+    align-items: center;
+    display: flex;
+    justify-content: end;
+
+    .login_area {
+        border: $border;
+        align-items: center;
+        display: inline-flex;
+        padding: 5px 0px;
+        margin-right: 10px;
+        // &:hover .logo i{
+        //     color: $navy;
+        // }
+        &:hover .login_title{
+            color: $yellow;
+        }
+        .logo {
+            i {
+                border: $border;
+            }
+        }
+
+        .login_title {
+            border: $border;
+            transition-duration: .4s;
+        }
+    }
+
+    // login_area end
+    // apply_area start
+    .apply_area {
+        border: $border;
+        align-items: center;
+        display: flex;
+        padding: 5px 10px;
+        // border: 1px solid $navy;
+        background-color: $yellow;
+        transition-duration: .4s;
+        border-radius: 4px;
+        &:hover{
+            background-color: $navy;
+            color: $solid_white;
+        }
+        &:hover .apply_title{
+            color: $solid_white;
+        }
+       
+        .apply_title {
+            border: $border;
+            transition-duration: .4s;
+        }
+    }
+
+    // apply_area end
+}
+
+// login_and_apply_area end
+
+// header_top end

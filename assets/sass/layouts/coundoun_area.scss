@@ -1,0 +1,70 @@
+// coundoun_area start
+.coundoun_area {
+    border: $border;
+    margin-top: 50px;
+    background-image: url("../images/coundoun_img/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .coundoun_area_2 {
+        border: $border;
+        // background-color: rgba(0,0,0,.8);
+        background-color: rgba(#002147,.8);
+    }
+}
+
+// coundoun_area_content start
+.coundoun_area_content {
+    border: $border;
+    display: flex;
+    justify-content: space-between;
+    padding: 165px 0px;
+    // number_and_title area start
+    .number_and_title {
+        border: $border;
+        // width: 200px;
+        text-align: center;
+
+        .number {
+            border: $border;
+            position: relative;
+            h3 {
+                border: $border;
+                // font-family: $Poppins_Medium;
+                font-family: $Poppins_SemiBold;
+                font-size: 45px;
+                line-height: 45px;
+                color: $solid_white;
+                padding-bottom: 20px;
+                &::before{
+                    content: "";
+                    height: 2px;
+                    width: 70px;
+                    background: $yellow;
+                    position: absolute;
+                   bottom: 0;
+                   margin: 0 auto;
+                   left: 0;
+                   right: 0;
+                }
+            }
+        }
+
+        .title {
+            border: $border;
+            padding-top: 15px;
+            p {
+                border: $border;
+                font-family: $Poppins_Medium;
+                font-size: 25px;
+                line-height: 25px;
+                color: $yellow;
+                // color: $solid_white;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+// coundoun_area end
