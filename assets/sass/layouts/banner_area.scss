@@ -10,6 +10,26 @@
     .banner{
         background-color: rgba(0,0,0,0.2);  
         padding: 132px 0px;
+        @include xs {
+            padding: 30px 0px;
+            background-color: #00000047;
+        }
+        @include sm {
+            padding: 30px 0px;
+            background-color: #00000047;
+        }
+        @include md {
+            padding: 50px 0px;
+            background-color: #00000047;
+        }
+        @include lg {
+            padding: 60px 0px;
+            background-color: #00000047;
+        }
+        @include xl {
+            padding: 70px 0px;
+            background-color: #00000047;
+        }
     }
 }
 .banner_content{
@@ -23,6 +43,14 @@
             line-height: 55px;
             text-transform: capitalize;
             color: $solid_white;
+            @include xs {
+                font-size: 20px;
+                line-height: 40px;
+            }
+            @include sm {
+                font-size: 20px;
+                line-height: 40px;
+            }
             span{
                 display: block;
                 color: $yellow;
@@ -32,6 +60,12 @@
     .banner_discription{
         border: $border;
         margin: 45px 0px;
+        @include xs {
+            margin: 20px 0px;
+        }
+        @include sm {
+            margin: 20px 0px;
+        }
         p{
             border: $border;
             font-family: $Poppins_Regular;
@@ -39,6 +73,14 @@
             line-height:26px;
             text-transform: capitalize;
             color: $solid_white;
+            @include xs {
+                font-size: 14px;
+                line-height:24px;
+            }
+            @include sm {
+                font-size: 14px;
+                line-height:24px;
+            }
         }
     }
     .banner_button_area{

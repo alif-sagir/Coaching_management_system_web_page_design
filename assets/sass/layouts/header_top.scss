@@ -46,24 +46,28 @@
 .contact_and_email {
     border: $border;
     display: flex;
-
+    @include xs {
+        display: block;
+    }
     .contact_area {
         border: $border;
         align-items: center;
         display: flex;
         padding: 5px 0px;
         margin-right: 15px;
-        &:hover .contact_title{
+        @include xs {
+            margin-right: 0px;
+        }
+        &:hover .contact_title {
             color: $yellow;
-           }
-        &:hover .colon_area{
+        }
+        &:hover .colon_area {
             color: $yellow;
-           }
-        &:hover .contact_number{
+        }
+        &:hover .contact_number {
             color: $yellow;
-           }
+        }
         .logo {
-
             i {
                 border: $border;
             }
@@ -71,18 +75,28 @@
 
         .contact_title {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
+            @include xs {
+                display: none;
+            }
+            @include sm {
+                display: none;
+            }
+           
         }
 
         .colon_area {
             border: $border;
             margin: 0px 3px;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
+            @include xs {
+                margin: 0px 3px 0px 0px;
+            }
         }
 
         .contact_number {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
         }
     }
 
@@ -94,24 +108,36 @@
         display: inline-flex;
         padding: 5px 0px;
         position: relative;
-       padding-left: 15px;
-       &:hover .contact_title{
-        color: $yellow;
-       }
-       &:hover .colon_area{
-        color: $yellow;
-       }
-       &:hover .email_address{
-        color: $yellow;
-       }
-        &::before{
-            content:"";
+        padding-left: 15px;
+        @include xs {
+            padding-left: 0px;
+        }
+        @include sm {
+            padding-left: 0px;
+        }
+        &:hover .contact_title {
+            color: $yellow;
+        }
+        &:hover .colon_area {
+            color: $yellow;
+        }
+        &:hover .email_address {
+            color: $yellow;
+        }
+        &::before {
+            content: "";
             width: 1px;
             height: 15px;
             background-color: $navy;
             top: 5px;
             left: 0px;
             position: absolute;
+            @include xs {
+                display: none;
+            }
+            @include sm {
+                display: none;
+            }
         }
         .logo {
             i {
@@ -121,22 +147,31 @@
 
         .contact_title {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
+            @include xs {
+                display: none;
+            }
+            @include sm {
+                display: none;
+            }
         }
 
         .colon_area {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
+            margin: 0px 3px;
+            @include xs {
+                margin: 0px 3px 0px 0px;
+            }
         }
 
         .email_address {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
         }
     }
 
     // email_area end
-
 }
 
 // contact_and_email area end
@@ -149,7 +184,9 @@
     align-items: center;
     display: flex;
     justify-content: end;
-
+    @include xs {
+        display: none;
+    }
     .login_area {
         border: $border;
         align-items: center;
@@ -159,7 +196,7 @@
         // &:hover .logo i{
         //     color: $navy;
         // }
-        &:hover .login_title{
+        &:hover .login_title {
             color: $yellow;
         }
         .logo {
@@ -170,7 +207,7 @@
 
         .login_title {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
         }
     }
 
@@ -183,19 +220,19 @@
         padding: 5px 10px;
         // border: 1px solid $navy;
         background-color: $yellow;
-        transition-duration: .4s;
+        transition-duration: 0.4s;
         border-radius: 4px;
-        &:hover{
+        &:hover {
             background-color: $navy;
             color: $solid_white;
         }
-        &:hover .apply_title{
+        &:hover .apply_title {
             color: $solid_white;
         }
-       
+
         .apply_title {
             border: $border;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
         }
     }
 

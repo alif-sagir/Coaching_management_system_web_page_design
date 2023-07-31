@@ -17,7 +17,9 @@
     .news_events_area_title {
         margin: 50px 0px;
         text-align: center;
-
+        @include xs {
+            margin: 24px 0px;
+        }
         h2 {
             border: $border;
             font-family: $Poppins_Medium;
@@ -25,6 +27,10 @@
             line-height: 30px;
             color: $navy;
             text-transform: capitalize;
+            @include xs {
+                font-size: 23px;
+            line-height: 23px;
+            }
             // letter-spacing: 2px;
         }
     }
@@ -229,6 +235,9 @@
         border: $border;
         margin: 50px 0px;
         text-align: center;
+        @include xs {
+            margin: 24px 0px;
+        }
 
         h2 {
             border: $border;
@@ -237,6 +246,10 @@
             line-height: 30px;
             color: $navy;
             text-transform: capitalize;
+            @include xs {
+                font-size: 23px;
+            line-height: 23px;
+            }
         }
     }
 

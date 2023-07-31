@@ -20,12 +20,31 @@
     display: flex;
     justify-content: space-between;
     padding: 165px 0px;
+    @include xs {
+        display: block;
+        padding: 100px 0px;
+    }
+    @include sm {
+        display: block;
+        padding: 100px 0px;
+    }
     // number_and_title area start
     .number_and_title {
         border: $border;
         // width: 200px;
         text-align: center;
-
+        @include xs {
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+        @include sm {
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
         .number {
             border: $border;
             position: relative;

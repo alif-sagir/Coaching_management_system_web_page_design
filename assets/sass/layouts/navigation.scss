@@ -2,7 +2,19 @@
 .nav_area {
     border: $border;
     background-color: $off_white;
+    @include xs {
+        display: none;
+        background-color: #dcdcdc;
 
+        position: relative;
+        right: -330px;
+        transition-duration: 0.4s;
+    }
+    @include sm {
+        display: none;
+        background-color: #dcdcdc;
+
+    }
     .nav_area_content {
         border: $border;
         padding: 10px;
@@ -13,7 +25,16 @@
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
-
+            @include xs {
+                display: block;
+                gap: 5px;
+                display: inline-grid;
+            }
+            @include sm {
+                display: block;
+                gap: 5px;
+                display: inline-grid;
+            }
             li {
                 border: $border;
                 align-items: center;
@@ -27,8 +48,8 @@
                     text-transform: capitalize;
                     color: $navy;
                     padding: 7px 7px;
-                    transition-duration: .4s;
-                    &:hover{
+                    transition-duration: 0.4s;
+                    &:hover {
                         background-color: $navy;
                         color: $solid_white;
                         border-radius: 4px;
@@ -40,3 +61,10 @@
 }
 
 // nav_area end
+// active_alass start
+.active_alass {
+    display: block;
+    position: relative;
+    right: 0px;
+}
+// active_alass end

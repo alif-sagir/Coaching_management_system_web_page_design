@@ -1,7 +1,7 @@
 // footer_area start
 .footer_area {
     border: $border;
-    background-color: $navy;
+    background-color: #002147;
     padding: 80px 0px;
 
     .footer_area_content {
@@ -9,17 +9,40 @@
     }
 }
 
-// footer_area_left start 
+// footer_area_left start
 .footer_area_left {
     border: $border;
 
     // logo area start
-    .logo {
+    .footer_logo {
         border: $border;
         display: contents;
-
+        @include xs {
+            width: 130px;
+        }
+        @include sm {
+            width: 150px;
+        }
+        @include md {
+            width: 170px;
+        }
+        @include lg {
+            width: 190px;
+        }
         img {
             border: $border;
+            @include xs {
+                width: 100%;
+            }
+            @include sm {
+                width: 100%;
+            }
+            @include md {
+                width: 100%;
+            }
+            @include lg {
+                width: 100%;
+            }
         }
     }
 
@@ -58,7 +81,7 @@
                     display: flex;
                     justify-content: center;
                     border: 1px solid #575796;
-                    transition-duration: .4s;
+                    transition-duration: 0.4s;
 
                     &:hover {
                         background-color: $yellow;
@@ -74,7 +97,7 @@
                         font-size: 13px;
                         color: $off_white;
                         color: #8d8d8d;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                     }
                 }
             }
@@ -90,7 +113,15 @@
     .featured_links_title {
         border: $border;
         margin-bottom: 20px;
-
+        @include xs {
+            margin-top: 40px;
+        }
+        @include sm {
+            margin-top: 40px;
+        }
+        @include md {
+            margin-top: 40px;
+        }
         h2 {
             border: $border;
             font-family: $Poppins_Medium;
@@ -106,7 +137,9 @@
         display: flex;
         gap: 50px;
         flex-wrap: wrap;
-
+        @include lg {
+            gap: 0px;
+        }
         .featured_links_content {
             border: $border;
 
@@ -136,7 +169,7 @@
                         // color: #8d8d8d;
                         text-transform: capitalize;
                         padding: 5px;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
 
                         &:hover {
                             color: $yellow;
@@ -156,7 +189,15 @@
     .course_links_title {
         border: $border;
         margin-bottom: 20px;
-
+        @include xs {
+            margin-top: 40px;
+        }
+        @include sm {
+            margin-top: 40px;
+        }
+        @include md {
+            margin-top: 40px;
+        }
         h2 {
             border: $border;
             font-family: $Poppins_Medium;
@@ -172,7 +213,9 @@
         display: flex;
         gap: 50px;
         flex-wrap: wrap;
-
+        @include lg {
+            gap: 0px;
+        }
         .course_links_content {
             border: $border;
 
@@ -202,7 +245,7 @@
                         // color: #8d8d8d;
                         text-transform: capitalize;
                         padding: 5px;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
 
                         &:hover {
                             color: $yellow;
@@ -222,7 +265,15 @@
     .contact_area_title {
         border: $border;
         margin-bottom: 20px;
-
+        @include xs {
+            margin-top: 40px;
+        }
+        @include sm {
+            margin-top: 40px;
+        }
+        @include md {
+            margin-top: 40px;
+        }
         h2 {
             border: $border;
             font-family: $Poppins_Medium;
@@ -265,7 +316,8 @@
             .address {
                 margin: 10px 0px 30px 0px;
 
-                .line1 {}
+                .line1 {
+                }
 
                 .line2 {
                     display: block;
@@ -284,7 +336,8 @@
                 .icon {
                     border: $border;
 
-                    i {}
+                    i {
+                    }
                 }
 
                 .phone_number {
@@ -297,7 +350,7 @@
                         font-size: 14px;
                         color: $solid_white;
                         margin-bottom: 10px;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
 
                         &:hover {
                             color: $yellow;
@@ -326,7 +379,7 @@
                         font-family: $Poppins_Regular;
                         font-size: 14px;
                         color: $solid_white;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
 
                         &:hover {
                             color: $yellow;

@@ -1,20 +1,48 @@
 // header_area_buttom start
 .header_area_buttom {
     border: $border;
-    background-color: $navy;
+    // background-color: $navy;
+    background-color: #2a6383;
 
     .header_area_buttom_content {
         border: $border;
         padding: 10px 0px;
+        position: relative;
     }
-}
 
-// logo area start
-.logo {
+
+    // logo area start
+.logo_area {
     border: $border;
-
+    @include xs{
+        width: 130px;
+    }
+    @include sm{
+        width: 150px;
+        margin-bottom: 8px;
+    }
+    @include md{
+        width: 170px;
+        margin-bottom: 0px;
+    }
+    @include lg{
+        width: 190px;
+        margin-bottom: 0px;
+    }
     img {
         border: $border;
+        @include xs{
+            width: 100%;
+        }
+        @include sm{
+            width: 100%;
+        }
+        @include md{
+            width: 100%;
+        }
+        @include lg{
+            width: 100%;
+        }
     }
 }
 
@@ -26,7 +54,9 @@
     display: flex;
     align-items: center;
     height: 100%;
-
+    @include xs{
+        display: none;
+     }
     .search_area {
         border: $border;
         width: 500px;
@@ -44,6 +74,7 @@
             padding: 0px 40px 0px 10px;
             outline: 0;
             border-radius: 4px;
+           
         }
 
         .button_area {
@@ -57,7 +88,10 @@
             padding: 10px;
             background-color: $yellow;
             border-radius: 4px;
-
+            @include xs{
+                top: -36px;
+                padding: 17px 12px;
+             }
             i {
                 border: $border;
                 color: $navy;
@@ -69,4 +103,36 @@
 }
 
 // search_area end
+
+// humberger_menu start
+.humberger_menu{
+    border: $border;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 13px;
+    // align-items: center;
+    // display: flex;
+    display: none;
+    @include xs{
+        display:block;
+    }
+    @include sm{
+         display:block;
+        margin-top: 19px;
+        
+    }
+    i{
+        border: $border;
+        font-size: 25px;
+    }
+}
+
+
+}
+
+
+// humberger_menu end
 // header_area_buttom end
