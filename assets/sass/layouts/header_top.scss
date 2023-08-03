@@ -2,7 +2,12 @@
 .header_top {
     border: $border;
     background-color: $solid_white;
-
+    @include xs {
+        display: none;
+    }
+    @include sm {
+        display: none;
+    }
     .header_top_content {
         border: $border;
         padding: 10px 0px;

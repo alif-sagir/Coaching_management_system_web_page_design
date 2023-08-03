@@ -3,7 +3,18 @@
     border: $border;
     // background-color: $navy;
     background-color: #2a6383;
-
+    position: sticky;
+    top: -2px;
+    z-index: 9999999;
+    @include xs{
+        top: 0px;
+    }
+    @include sm{
+        top: 0px;
+    }
+    @include md{
+        top: -1px;
+    }
     .header_area_buttom_content {
         border: $border;
         padding: 10px 0px;
@@ -57,6 +68,9 @@
     @include xs{
         display: none;
      }
+     @include sm {
+        display: none;
+    }
     .search_area {
         border: $border;
         width: 500px;

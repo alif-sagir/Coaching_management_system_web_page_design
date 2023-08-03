@@ -8,7 +8,14 @@
         margin-top: 90px;
         margin-bottom: 50px;
         text-align: center;
-
+        @include xs {
+            margin-top: 24px;
+        margin-bottom: 24px;
+        }
+        @include sm {
+            margin-top: 24px;
+        margin-bottom: 24px;
+        }
         h2 {
             border: $border;
             font-family: $Poppins_Medium;
@@ -47,6 +54,9 @@
                     padding: 10px 20px;
                     margin-right: 10px;
                     border-radius: 4px;
+                    @include xs {
+                       display: none;
+                    }
                 }
 
                 input {
@@ -62,6 +72,9 @@
                     padding: 0px 45px 0px 10px;
                     outline: 0;
                     border-radius: 4px;
+                    @include xs {
+                        padding: 4px 45px 0px 4px;
+                     }
                 }
 
                 button {
@@ -99,6 +112,9 @@
             .categories_and_popular {
                 border: $border;
                 margin: 50px 0px;
+                @include xs {
+                    margin: 30px 0px;
+                 }
                 .title {
                     border: $border;
 
@@ -109,6 +125,10 @@
                         line-height: 25px;
                         color: $navy;
                         text-transform: capitalize;
+                        @include xs {
+                            font-size: 20px;
+                            line-height: 20px;
+                         }
                     }
                 }
 
@@ -144,7 +164,11 @@
                     }
                 }
             }
-
+            .popular_tag_area{
+                @include sm {
+                    margin-top: 0px;
+                 }
+            }
             // categories_and_popular same item end
             // categories_area start
             .categories_area {

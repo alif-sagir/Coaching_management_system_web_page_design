@@ -2,10 +2,12 @@
 .nav_area {
     border: $border;
     background-color: $off_white;
+    position: sticky;
+    top: 82px;
+    z-index: 9999999;
     @include xs {
         display: none;
         background-color: #dcdcdc;
-
         position: relative;
         right: -330px;
         transition-duration: 0.4s;
@@ -14,6 +16,12 @@
         display: none;
         background-color: #dcdcdc;
 
+    }
+    @include md {
+        top: 63px;
+    }
+    @include lg {
+        top: 69px;
     }
     .nav_area_content {
         border: $border;
@@ -64,7 +72,10 @@
 // active_alass start
 .active_alass {
     display: block;
-    position: relative;
+    position: fixed;
     right: 0px;
+    top: 54px;
+    width: 100%;
+    height: 100vh;
 }
 // active_alass end

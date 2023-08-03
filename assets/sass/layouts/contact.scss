@@ -1,11 +1,11 @@
-.contact_area {
+.contact_areaa {
     border: $border;
     // background-color: $off_white;
 }
 
 // contact_area_title start
 
-.contact_area_title {
+.contact_area_titlee {
     border: $border;
 
     .contact_area_title_content {
@@ -14,7 +14,14 @@
         margin-top: 90px;
         margin-bottom: 90px;
         text-align: center;
-
+        @include xs {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+        @include sm {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
         h2 {
             border: $border;
             font-family: $Poppins_Medium;
@@ -22,6 +29,10 @@
             line-height: 30px;
             color: $navy;
             text-transform: capitalize;
+            @include xs {
+                font-size: 23px;
+                line-height: 23px;
+            }
         }
     }
 }
@@ -34,7 +45,6 @@
     .contact_area_content_details {
         border: $border;
     }
-
 }
 
 // contact_area_left start
@@ -74,9 +84,10 @@
     }
 
     .item_value {
-        margin-left: 20px;
         margin-left: 30px;
-
+        @include xs {
+            margin-left: 0px;
+         }
         .item_a {
             font-family: $Poppins_Medium;
             font-size: 16px;
@@ -84,14 +95,11 @@
             color: $dark_light;
             // color: $yellow;
             text-transform: capitalize;
-            transition-duration: .4s;
+            transition-duration: 0.4s;
 
             &:hover {
                 color: $navy;
-
             }
-
-
         }
     }
 
@@ -102,11 +110,12 @@
 
         .address_title {
             .title_icon {
-
-                i {}
+                i {
+                }
             }
 
-            h2 {}
+            h2 {
+            }
         }
 
         .address_details {
@@ -115,7 +124,6 @@
 
                 &:hover span {
                     color: $navy;
-
                 }
 
                 span {
@@ -126,7 +134,7 @@
                     line-height: 16px;
                     color: $dark_light;
                     text-transform: capitalize;
-                    transition-duration: .4s;
+                    transition-duration: 0.4s;
                 }
             }
         }
@@ -139,10 +147,12 @@
 
         .phone_title {
             .title_icon {
-                i {}
+                i {
+                }
             }
 
-            h2 {}
+            h2 {
+            }
         }
 
         .phone_number {
@@ -161,10 +171,12 @@
 
         .email_title {
             .title_icon {
-                i {}
+                i {
+                }
             }
 
-            h2 {}
+            h2 {
+            }
         }
 
         .email_address {
@@ -180,15 +192,26 @@
     .social_link_area {
         .social_link_title {
             .title_icon {
-                i {}
+                i {
+                }
             }
 
-            h2 {}
+            h2 {
+            }
         }
 
         .social_link {
             border: $border;
-
+            @include xs {
+                margin-top: 35px;
+                justify-content: center;
+                display: grid;
+                margin-bottom: 35px;
+             }
+            @include sm {
+               
+                margin-bottom: 35px;
+             }
             ul {
                 border: $border;
                 display: flex;
@@ -206,7 +229,7 @@
                         justify-content: center;
                         background-color: $navy;
                         // background-color: $yellow;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
 
                         &:hover {
                             background-color: transparent;
@@ -222,7 +245,7 @@
                             color: $solid_white;
                             // color: $navy;
                             color: $yellow;
-                            transition-duration: .4s;
+                            transition-duration: 0.4s;
                         }
                     }
                 }
@@ -272,21 +295,37 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 35px;
+            @include xs {
+                display: block;
+            }
+            @include md {
+                display: block;
+            }
 
             .first_name {
                 border: $border;
 
-                .label_all {}
+                .label_all {
+                }
 
-                .input_all {}
+                .input_all {
+                }
             }
 
             .last_name {
                 border: $border;
+                @include xs {
+                   margin-top: 35px;
+                }
+                @include md {
+                   margin-top: 35px;
+                }
 
-                .label_all {}
+                .label_all {
+                }
 
-                .input_all {}
+                .input_all {
+                }
             }
         }
 
@@ -299,7 +338,8 @@
             .email {
                 border: $border;
 
-                .label_all {}
+                .label_all {
+                }
 
                 .input_all {
                     width: 100%;
@@ -316,7 +356,8 @@
             .message {
                 border: $border;
 
-                .label_all {}
+                .label_all {
+                }
 
                 textarea {
                     border: $border;
@@ -347,7 +388,7 @@
                 // background-color: $yellow;
                 border: 1px solid $navy;
                 padding: 4px 0px;
-                transition-duration: .4s;
+                transition-duration: 0.4s;
 
                 &:hover {
                     background-color: transparent;
@@ -369,8 +410,7 @@
                     // color: $yellow;
                     color: $solid_white;
                     // color: $navy;
-                    transition-duration: .4s;
-
+                    transition-duration: 0.4s;
                 }
 
                 .button_title {
@@ -384,7 +424,7 @@
                     // color: $yellow;
                     color: $solid_white;
                     // color: $navy;
-                    transition-duration: .4s;
+                    transition-duration: 0.4s;
                 }
             }
         }
@@ -396,7 +436,7 @@
 // contact_area_right end
 // contact_area_content end
 // map_area start
-.map_area{
+.map_area {
     border: $border;
     margin: 90px 0px 0px 0px;
 }

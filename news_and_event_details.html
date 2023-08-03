@@ -37,7 +37,7 @@
             <div class="header_top_content">
                 <div class="row">
                     <!-- contact_and_email area start -->
-                    <div class="col-md-6">
+                    <div class=" col-sm-8 col-md-9">
                         <div class="contact_and_email">
                             <!-- contact_area start -->
                             <a href="#" class="contact_area">
@@ -76,7 +76,7 @@
                     </div>
                     <!-- contact_and_email area end -->
                     <!-- login_and_apply_area start -->
-                    <div class="col-md-6">
+                    <div class=" col-sm-4 col-md-3">
                         <div class="login_and_apply_area">
                             <!-- login_area start -->
                             <a href="#" class="login_area">
@@ -99,6 +99,8 @@
                     </div>
                     <!-- login_and_apply_area end -->
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -110,16 +112,16 @@
             <div class="header_area_buttom_content">
                 <div class="row">
                     <!-- logo area start -->
-                    <div class="col-md-3">
-                        <div class="logo">
-                            <img src="./assets/images/logo_img/logo2.png" alt="logo">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="logo_area">
+                            <img src="./assets/images/logo_img/logo.png" alt="logo">
                         </div>
                     </div>
                     <!-- logo area end -->
                     <!-- search_area start -->
-                    <div class="col-md-9">
+                    <div class="col-xs-6 col-md-9">
                         <div class="search_area_content">
-                            <form method="" action="#" class="search_area">
+                            <form method="#" action="#" class="search_area">
                                 <input type="text" placeholder="Search...">
                                 <button class="button_area">
                                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -130,12 +132,24 @@
                     </div>
                     <!-- search_area end -->
                 </div>
+
+                <!-- humberger_menu start -->
+                <section onclick="document.getElementById('active_nav_area').classList.toggle('active_alass') "
+                    class="humberger_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </section>
+                <!-- humberger_menu end -->
+
+
+
             </div>
         </div>
     </section>
     <!-- header_area_buttom end -->
+
     <!-- nav_area start -->
-    <nav class="nav_area">
+    <!-- active_nav_area -->
+    <nav id="active_nav_area" class="nav_area">
         <div class="container">
             <div class="nav_area_content">
                 <ul>
@@ -255,11 +269,12 @@
             <div class="footer_area_content">
                 <div class="row">
                     <!-- footer_area_left start -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-12">
                         <div class="footer_area_left">
                             <!-- logo area start -->
-                            <a href="#" class="logo">
-                                <img src="./assets/images/logo_img/logo2.png" alt="img">
+
+                            <a href="#" class="footer_logo">
+                                <img src="./assets/images/logo_img/logo.png" alt="img">
                             </a>
                             <!-- logo area end -->
                             <!-- footer_discription_area start -->
@@ -296,7 +311,7 @@
                     </div>
                     <!-- footer_area_left end -->
                     <!-- featured_links_area start -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-12">
                         <div class="featured_links_area">
                             <div class="featured_links_title">
                                 <h2>featured links</h2>
@@ -357,7 +372,7 @@
                     </div>
                     <!-- featured_links_area end -->
                     <!-- course_links_area start -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-12">
                         <div class="course_links_area">
                             <div class="course_links_title">
                                 <h2>courses</h2>
@@ -418,7 +433,7 @@
                     </div>
                     <!-- course_links_area end -->
                     <!-- contact_area start -->
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-12">
                         <div class="contact_area">
                             <div class="contact_area_title">
                                 <h2>contact</h2>
