@@ -1,0 +1,65 @@
+// teacher_details_area start
+.teacher_details_area {
+    border: $border;
+    margin: 50px 0px;
+    .teacher_details_area_content {
+        border: $border;
+        background-color: $off_white;
+        width: 850px;
+        margin: auto;
+        padding: 20px;
+        @include xs{
+            width: 250px;
+        }
+        @include sm{
+            width: 500px;
+        }
+        @include md{
+            width: 670px;
+        }
+        .teacher_details {
+            border: $border;
+            .image {
+                border: $border;
+                width: 185px;
+                height: 200px;
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                @include xs{
+                    width: 125px;
+                    height: 140px;
+                }
+            }
+            .teacher_name {
+                border: $border;
+                margin: 20px 0px 10px 0px;
+                .name_text {
+                    border: $border;
+                    font-family: $Poppins_SemiBold;
+                    font-size: 26px;
+                    color: $navy;
+                    @include xs{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .all_textt {
+                border: $border;
+                margin: 5px 0px;
+
+                .textt {
+                    border: $border;
+                    font-family: $Poppins_Medium;
+                    font-size: 16px;
+                    color: $navy;
+                    @include xs{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+// teacher_details_area end

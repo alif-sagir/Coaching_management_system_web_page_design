@@ -1,0 +1,72 @@
+// about_area start
+.about_area {
+    border: $border;
+    margin: 50px 0px;
+    .about_area_content {
+        border: $border;
+        .content_area {
+            border: $border;
+            margin-bottom: 50px;
+            .area_title {
+                border: $border;
+                margin-bottom: 30px;
+                .titile {
+                    border: $border;
+                    font-family: $Poppins_SemiBold;
+                    font-size: 26px;
+                    color: $navy;
+                }
+            }
+            .area_content {
+                border: $border;
+                .content_text {
+                    border: $border;
+                    @include xs{
+                       margin-bottom: 20px;
+                    }
+                    @include sm{
+                       margin-bottom: 20px;
+                    }
+                    .text {
+                        border: $border;
+                        font-family: $Poppins_Medium;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: $navy;
+                    }
+                }
+                .content_image {
+                    border: $border;
+                    img {
+                        border: $border;
+                        width: 100%;
+                    }
+                }
+            }
+            .gallery_area{
+                border: $border;
+                .gallery_content{
+                    border: $border;
+                    gap: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .gallary_image{
+                        border: $border;
+                        width: 250px;
+                        height: 200px;
+                        // img{
+                        //     border: $border;
+                        //     width: 100%;
+                        //     height: 100%;
+                        // }
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+// about_area end

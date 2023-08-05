@@ -1,8 +1,8 @@
 // header_area_buttom start
 .header_area_buttom {
     border: $border;
-    // background-color: $navy;
-    background-color: #2a6383;
+    // background-color: #2a6383;
+    background-color: $solid_white;
     position: sticky;
     top: -2px;
     z-index: 9999999;
@@ -77,7 +77,8 @@
         position: relative;
         align-items: center;
         display: flex;
-
+        border: 1px solid $navy;
+        border-radius: 4px;
         input {
             border: $border;
             width: 100%;
@@ -127,8 +128,6 @@
     top: 0;
     right: 0;
     margin-top: 13px;
-    // align-items: center;
-    // display: flex;
     display: none;
     @include xs{
         display:block;

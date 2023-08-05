@@ -1,7 +1,8 @@
 // header_top start
 .header_top {
     border: $border;
-    background-color: $solid_white;
+    // background-color: $solid_white;
+    background-color: $navy;
     @include xs {
         display: none;
     }
@@ -31,7 +32,8 @@
     font-size: 12px;
     line-height: 12px;
     text-transform: capitalize;
-    color: $navy;
+    // color: $navy;
+    color: $solid_white;
 }
 
 .colon_area {
@@ -45,7 +47,8 @@
     font-family: $Poppins_Regular;
     font-size: 12px;
     line-height: 12px;
-    color: $navy;
+    // color: $navy;
+    color: $solid_white;
 }
 
 .contact_and_email {

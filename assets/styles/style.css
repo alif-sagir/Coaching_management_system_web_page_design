@@ -3,6 +3,7 @@ body {
   padding: 0;
   outline: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h1,
@@ -78,7 +79,7 @@ i {
 /* border */
 .header_top {
   border: 0px solid red;
-  background-color: #ffffff;
+  background-color: #431c46;
 }
 @media screen and (max-width: 575.9px) {
   .header_top {
@@ -103,7 +104,7 @@ i {
 .logo i {
   font-size: 12px;
   line-height: 12px;
-  color: #fdc800;
+  color: #8cc63f;
 }
 
 .title {
@@ -111,7 +112,7 @@ i {
   font-size: 12px;
   line-height: 12px;
   text-transform: capitalize;
-  color: #431c46;
+  color: #ffffff;
 }
 
 .colon_area {
@@ -125,7 +126,7 @@ i {
   font-family: "Poppins-Regular";
   font-size: 12px;
   line-height: 12px;
-  color: #431c46;
+  color: #ffffff;
 }
 
 .contact_and_email {
@@ -150,13 +151,13 @@ i {
   }
 }
 .contact_and_email .contact_area:hover .contact_title {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_and_email .contact_area:hover .colon_area {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_and_email .contact_area:hover .contact_number {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_and_email .contact_area .logo i {
   border: 0px solid red;
@@ -208,13 +209,13 @@ i {
   }
 }
 .contact_and_email .email_area:hover .contact_title {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_and_email .email_area:hover .colon_area {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_and_email .email_area:hover .email_address {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_and_email .email_area::before {
   content: "";
@@ -287,7 +288,7 @@ i {
   margin-right: 10px;
 }
 .login_and_apply_area .login_area:hover .login_title {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .login_and_apply_area .login_area .logo i {
   border: 0px solid red;
@@ -301,7 +302,7 @@ i {
   align-items: center;
   display: flex;
   padding: 5px 10px;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   transition-duration: 0.4s;
   border-radius: 4px;
 }
@@ -319,7 +320,7 @@ i {
 
 .header_area_buttom {
   border: 0px solid red;
-  background-color: #2a6383;
+  background-color: #ffffff;
   position: sticky;
   top: -2px;
   z-index: 9999999;
@@ -416,6 +417,8 @@ i {
   position: relative;
   align-items: center;
   display: flex;
+  border: 1px solid #431c46;
+  border-radius: 4px;
 }
 .header_area_buttom .search_area_content .search_area input {
   border: 0px solid red;
@@ -437,7 +440,7 @@ i {
   display: flex;
   height: 100%;
   padding: 10px;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   border-radius: 4px;
 }
 @media screen and (max-width: 575.9px) {
@@ -487,27 +490,28 @@ i {
 }
 @media screen and (max-width: 575.9px) {
   .nav_area {
-    display: none;
-    background-color: #dcdcdc;
-    position: relative;
-    right: -330px;
+    top: 54px;
+    background-color: #431c46;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: -1000px;
+    opacity: 0;
+    visibility: hidden;
     transition-duration: 0.4s;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px) {
   .nav_area {
-    display: none;
-    background-color: #dcdcdc;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.9px) {
-  .nav_area {
-    top: 63px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.9px) {
-  .nav_area {
-    top: 69px;
+    top: 54px;
+    background-color: #431c46;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    right: -1000px;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.4s;
   }
 }
 .nav_area .nav_area_content {
@@ -524,21 +528,31 @@ i {
 @media screen and (max-width: 575.9px) {
   .nav_area .nav_area_content ul {
     display: block;
-    gap: 5px;
-    display: inline-grid;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px) {
   .nav_area .nav_area_content ul {
     display: block;
-    gap: 5px;
-    display: inline-grid;
   }
 }
 .nav_area .nav_area_content ul li {
   border: 0px solid red;
   align-items: center;
   display: flex;
+}
+@media screen and (max-width: 575.9px) {
+  .nav_area .nav_area_content ul li {
+    border-bottom: 1px solid #696969;
+    padding-bottom: 5px;
+    margin: 10px 0px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .nav_area .nav_area_content ul li {
+    border-bottom: 1px solid #696969;
+    padding-bottom: 5px;
+    margin: 10px 0px;
+  }
 }
 .nav_area .nav_area_content ul li .nav_item {
   border: 0px solid red;
@@ -550,19 +564,30 @@ i {
   padding: 7px 7px;
   transition-duration: 0.4s;
 }
+@media screen and (max-width: 575.9px) {
+  .nav_area .nav_area_content ul li .nav_item {
+    color: #ffffff;
+    font-family: "Poppins-Regular";
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .nav_area .nav_area_content ul li .nav_item {
+    color: #ffffff;
+    font-family: "Poppins-Regular";
+    width: 100%;
+  }
+}
 .nav_area .nav_area_content ul li .nav_item:hover {
   background-color: #431c46;
   color: #ffffff;
   border-radius: 4px;
 }
 
-.active_alass {
-  display: block;
-  position: fixed;
+.active_class {
   right: 0px;
-  top: 54px;
-  width: 100%;
-  height: 100vh;
+  opacity: 1;
+  visibility: visible;
 }
 
 .banner_area {
@@ -635,7 +660,7 @@ i {
 }
 .banner_content .banner_title h1 span {
   display: block;
-  color: #fdc800;
+  color: #8cc63f;
 }
 .banner_content .banner_discription {
   border: 0px solid red;
@@ -687,7 +712,7 @@ i {
   transition-duration: 0.4s;
 }
 .banner_content .banner_button_area a:hover {
-  background-color: #fdc800;
+  background-color: #8cc63f;
   color: #431c46;
 }
 .banner_content .banner_button_area a span {
@@ -766,7 +791,7 @@ i {
   font-family: "Poppins-Medium";
   font-size: 15px;
   line-height: 15px;
-  color: #fdc800;
+  color: #8cc63f;
   text-transform: capitalize;
   font-style: italic;
 }
@@ -811,7 +836,7 @@ i {
   transition-duration: 0.4s;
 }
 .news_events_area .news_events_area_content_all_2 .news_events_area_content .news_img_and_news_text .news_text_area .news_title a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .news_events_area .news_events_area_content_all_2 .news_events_area_content .news_img_and_news_text .news_text_area .news_details {
   border: 0px solid red;
@@ -834,7 +859,7 @@ i {
   font-family: "Poppins-Medium";
   font-size: 14px;
   line-height: 14px;
-  color: #fdc800;
+  color: #8cc63f;
   text-transform: capitalize;
   transition-duration: 0.4s;
 }
@@ -862,7 +887,7 @@ i {
   transition-duration: 0.4s;
 }
 .news_events_area .view_more_button a:hover {
-  background-color: #fdc800;
+  background-color: #8cc63f;
   color: #431c46;
 }
 
@@ -930,7 +955,7 @@ i {
   font-family: "Poppins-Medium";
   font-size: 15px;
   line-height: 15px;
-  color: #fdc800;
+  color: #8cc63f;
   text-transform: capitalize;
   font-style: italic;
 }
@@ -949,7 +974,7 @@ i {
   transition-duration: 0.4s;
 }
 .notice_area .notice_area_all_content .notice_area_content .notice .notice_details a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .notice_area .notice_area_all_content .view_more_button {
   border: 0px solid red;
@@ -969,7 +994,7 @@ i {
   transition-duration: 0.4s;
 }
 .notice_area .notice_area_all_content .view_more_button a:hover {
-  background-color: #fdc800;
+  background-color: #8cc63f;
   color: #431c46;
 }
 
@@ -1046,7 +1071,7 @@ i {
   margin: 20px 0px;
 }
 .courses_area_content .course .course_content .course_group span {
-  background-color: #fdc800;
+  background-color: #8cc63f;
   padding: 3px 7px;
   border-radius: 2px;
 }
@@ -1062,7 +1087,7 @@ i {
 }
 .coundoun_area .coundoun_area_2 {
   border: 0px solid red;
-  background-color: rgba(0, 33, 71, 0.8);
+  background-color: rgba(67, 28, 70, 0.8);
 }
 
 .coundoun_area_content {
@@ -1119,7 +1144,7 @@ i {
   content: "";
   height: 2px;
   width: 70px;
-  background: #fdc800;
+  background: #8cc63f;
   position: absolute;
   bottom: 0;
   margin: 0 auto;
@@ -1135,7 +1160,7 @@ i {
   font-family: "Poppins-Medium";
   font-size: 25px;
   line-height: 25px;
-  color: #fdc800;
+  color: #8cc63f;
   text-transform: capitalize;
 }
 
@@ -1205,7 +1230,7 @@ i {
   transition-duration: 0.4s;
 }
 .teacher_area_content .teacher .teacher_discription .teacher_name a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .teacher_area_content .teacher .teacher_discription .teacher_title {
   margin: 20px 0px;
@@ -1237,7 +1262,7 @@ i {
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   transition-duration: 0.4s;
 }
 .teacher_area_content .teacher .teacher_discription .teacher_contact ul li a:hover {
@@ -1251,7 +1276,7 @@ i {
 
 .academic_partners_area {
   border: 0px solid red;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   padding: 70px 0px;
 }
 .academic_partners_area .academic_partners_content {
@@ -1326,10 +1351,10 @@ i {
   line-height: 14px;
   color: #431c46;
   text-transform: uppercase;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   padding: 15px 25px;
   transition-duration: 0.4s;
-  border: 2px solid #fdc800;
+  border: 2px solid #8cc63f;
 }
 .academic_partners_right_area .text_button_area .join_button_area form .join_button:hover {
   background-color: transparent;
@@ -1459,7 +1484,7 @@ i {
 }
 .footer_area {
   border: 0px solid red;
-  background-color: #002147;
+  background-color: #431c46;
   padding: 80px 0px;
 }
 @media screen and (max-width: 575.9px) {
@@ -1500,6 +1525,7 @@ i {
 }
 .footer_area_left .footer_logo img {
   border: 0px solid red;
+  filter: invert(1);
 }
 @media screen and (max-width: 575.9px) {
   .footer_area_left .footer_logo img {
@@ -1550,8 +1576,8 @@ i {
   transition-duration: 0.4s;
 }
 .footer_area_left .footer_social_link ul li a:hover {
-  background-color: #fdc800;
-  border: 1px solid #fdc800;
+  background-color: #8cc63f;
+  border: 1px solid #8cc63f;
 }
 .footer_area_left .footer_social_link ul li a:hover i {
   color: #431c46;
@@ -1617,7 +1643,7 @@ i {
 }
 .featured_links_area .featured_links .featured_links_content ul li span i {
   border: 0px solid red;
-  color: #fdc800;
+  color: #8cc63f;
   font-size: 14px;
 }
 .featured_links_area .featured_links .featured_links_content ul li a {
@@ -1631,7 +1657,7 @@ i {
   transition-duration: 0.4s;
 }
 .featured_links_area .featured_links .featured_links_content ul li a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 
 .course_links_area {
@@ -1687,7 +1713,7 @@ i {
 }
 .course_links_area .course_links .course_links_content ul li span i {
   border: 0px solid red;
-  color: #fdc800;
+  color: #8cc63f;
   font-size: 14px;
 }
 .course_links_area .course_links .course_links_content ul li a {
@@ -1701,7 +1727,7 @@ i {
   transition-duration: 0.4s;
 }
 .course_links_area .course_links .course_links_content ul li a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 
 .contact_area {
@@ -1756,7 +1782,7 @@ i {
 }
 .contact_area .contact_content ul li .icon i {
   border: 0px solid red;
-  color: #fdc800;
+  color: #8cc63f;
   font-size: 14px;
 }
 .contact_area .contact_content ul .address {
@@ -1786,7 +1812,7 @@ i {
   transition-duration: 0.4s;
 }
 .contact_area .contact_content ul .phone_number_and_icon .phone_number a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 .contact_area .contact_content ul .email_and_icon {
   border: 0px solid red;
@@ -1809,12 +1835,12 @@ i {
   transition-duration: 0.4s;
 }
 .contact_area .contact_content ul .email_and_icon .email a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 
 .copyright_area {
   border: 0px solid red;
-  background-color: #041a34;
+  background-color: #2a002d;
   padding: 25px 0px;
 }
 .copyright_area .copyright_content {
@@ -1842,7 +1868,7 @@ i {
   transition-duration: 0.4s;
 }
 .copyright_area .copyright_content p span a:hover {
-  color: #fdc800;
+  color: #8cc63f;
 }
 
 .contact_areaa {
@@ -1911,7 +1937,7 @@ i {
 .contact_area_left .title .title_icon i {
   border: 0px solid red;
   font-size: 16px;
-  color: #fdc800;
+  color: #8cc63f;
   color: #431c46;
 }
 .contact_area_left .title h2 {
@@ -2019,7 +2045,7 @@ i {
   border: 0px solid red;
   font-size: 14px;
   color: #ffffff;
-  color: #fdc800;
+  color: #8cc63f;
   transition-duration: 0.4s;
 }
 
@@ -2245,7 +2271,7 @@ i {
   display: flex;
   height: 100%;
   padding: 12px;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   border-radius: 3px;
 }
 .notice_page .search_area .search_content form button i {
@@ -2341,12 +2367,12 @@ i {
   font-family: "Poppins-Medium";
   font-size: 15px;
   line-height: 15px;
-  color: #fdc800;
+  color: #8cc63f;
   color: #431c46;
   text-transform: capitalize;
   font-style: italic;
   background-color: #431c46;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   display: inline;
   padding: 8px 10px;
 }
@@ -2371,13 +2397,13 @@ i {
   border: 0px solid red;
   font-family: "Poppins-Medium";
   font-size: 14px;
-  color: #fdc800;
+  color: #8cc63f;
   text-transform: capitalize;
   transition-duration: 0.4s;
 }
 .notice_page .notice_all_area .notice_all_content .notice .notice_details a .dote {
   letter-spacing: 5px;
-  color: #fdc800;
+  color: #8cc63f;
   transition-duration: 0.4s;
 }
 .notice_page .notice_all_area .notice_all_content .notice .notice_details a:hover {
@@ -2424,7 +2450,7 @@ i {
   transition-duration: 0.4s;
 }
 .pegination_area .pegination_content ul li a:hover {
-  background-color: #fdc800;
+  background-color: #8cc63f;
 }
 .pegination_area .pegination_content ul li .previous_next {
   border: 0px solid red;
@@ -2461,7 +2487,7 @@ i {
   text-transform: capitalize;
   font-style: italic;
   background-color: #431c46;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   display: initial;
   padding: 10px;
 }
@@ -2544,7 +2570,7 @@ i {
   text-transform: capitalize;
   font-style: italic;
   background-color: #431c46;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   display: inline-block;
   padding: 10px;
 }
@@ -2592,165 +2618,78 @@ i {
   margin: 30px 0px;
 }
 
-.news_and_event_page {
-  border: 0px solid red;
-}
-.news_and_event_page .news_and_event_title {
-  border: 0px solid red;
-  margin-top: 90px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.news_and_event_page .news_and_event_title h2 {
-  border: 0px solid red;
-  font-family: "Poppins-Medium";
-  font-size: 30px;
-  line-height: 30px;
-  color: #431c46;
-  text-transform: capitalize;
-}
-.news_and_event_page .search_area {
-  border: 0px solid red;
-}
-.news_and_event_page .search_area .search_content {
-  border: 0px solid red;
-  justify-content: center;
-  display: flex;
-}
-.news_and_event_page .search_area .search_content form {
-  border: 0px solid red;
-  width: 650px;
-  position: relative;
-  right: 0px;
-  display: flex;
-}
-.news_and_event_page .search_area .search_content form label {
-  border: 0px solid red;
-  font-size: 16px;
-  font-family: "Poppins-Regular";
-  color: #ffffff;
-  background-color: #431c46;
-  text-transform: capitalize;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 10px 20px;
-  margin-right: 10px;
-  border-radius: 4px;
-}
-.news_and_event_page .search_area .search_content form input {
-  border: 0px solid red;
-  width: 100%;
-  font-size: 16px;
-  font-family: "Poppins-Regular";
-  color: #431c46;
-  background-color: #431c46;
-  background-color: #f5f5f5;
-  padding: 0px 45px 0px 10px;
-  outline: 0;
-  border-radius: 4px;
-}
-.news_and_event_page .search_area .search_content form button {
-  border: 0px solid red;
-  position: absolute;
-  right: 0;
-  top: 0;
-  align-items: center;
-  display: flex;
-  height: 100%;
-  padding: 12px;
-  background-color: #fdc800;
-  border-radius: 3px;
-}
-.news_and_event_page .search_area .search_content form button i {
-  border: 0px solid red;
-  color: #431c46;
-  font-size: 14px;
-  line-height: 14px;
-}
-.news_and_event_page .categories_and_popular_tags_area {
-  border: 0px solid red;
-}
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content {
-  border: 0px solid red;
-}
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular {
+.teacher_details_area {
   border: 0px solid red;
   margin: 50px 0px;
 }
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .title {
+.teacher_details_area .teacher_details_area_content {
+  border: 0px solid red;
+  background-color: #f5f5f5;
+  width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content {
+    width: 250px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .teacher_details_area .teacher_details_area_content {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .teacher_details_area .teacher_details_area_content {
+    width: 670px;
+  }
+}
+.teacher_details_area .teacher_details_area_content .teacher_details {
   border: 0px solid red;
 }
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .title h4 {
+.teacher_details_area .teacher_details_area_content .teacher_details .image {
   border: 0px solid red;
-  font-family: "Poppins-Medium";
-  font-size: 25px;
-  line-height: 25px;
+  width: 185px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content .teacher_details .image {
+    width: 125px;
+    height: 140px;
+  }
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .teacher_name {
+  border: 0px solid red;
+  margin: 20px 0px 10px 0px;
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .teacher_name .name_text {
+  border: 0px solid red;
+  font-family: "Poppins-SemiBold";
+  font-size: 26px;
   color: #431c46;
-  text-transform: capitalize;
 }
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .item {
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content .teacher_details .teacher_name .name_text {
+    font-size: 18px;
+  }
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .all_textt {
   border: 0px solid red;
-  margin: 30px 0px;
+  margin: 5px 0px;
 }
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .item ul {
-  border: 0px solid red;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .item ul li {
-  border: 0px solid red;
-}
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .item ul li a {
+.teacher_details_area .teacher_details_area_content .teacher_details .all_textt .textt {
   border: 0px solid red;
   font-family: "Poppins-Medium";
   font-size: 16px;
-  line-height: 16px;
-  text-transform: capitalize;
   color: #431c46;
-  padding: 7px 7px;
-  background-color: #f5f5f5;
-  border-radius: 3px;
-  transition-duration: 0.4s;
 }
-.news_and_event_page .categories_and_popular_tags_area .categories_and_popular_tags_content .categories_and_popular .item ul li a:hover {
-  color: #ffffff;
-  background-color: #431c46;
-}
-.news_and_event_page .teachers {
-  border: 0px solid red;
-  display: flex;
-}
-.news_and_event_page .teachers .teachers_img {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_name {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_name a {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_title {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_title p {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_contact {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_contact ul {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_contact ul li {
-  border: 0px solid red;
-}
-.news_and_event_page .teachers .teacher_discription .teacher_contact ul li a {
-  border: 0px solid red;
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content .teacher_details .all_textt .textt {
+    font-size: 13px;
+  }
 }
 
 .news_and_event_page {
@@ -2858,7 +2797,7 @@ i {
   display: flex;
   height: 100%;
   padding: 12px;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   border-radius: 3px;
 }
 .news_and_event_page .search_area .search_content form button i {
@@ -2964,12 +2903,12 @@ i {
   font-family: "Poppins-Medium";
   font-size: 15px;
   line-height: 15px;
-  color: #fdc800;
+  color: #8cc63f;
   color: #431c46;
   text-transform: capitalize;
   font-style: italic;
   background-color: #431c46;
-  background-color: #fdc800;
+  background-color: #8cc63f;
   display: inline;
   padding: 8px 10px;
 }
@@ -3031,13 +2970,13 @@ i {
   border: 0px solid red;
   font-family: "Poppins-Medium";
   font-size: 14px;
-  color: #fdc800;
+  color: #8cc63f;
   text-transform: capitalize;
   transition-duration: 0.4s;
 }
 .news_and_event_page .news_and_events_all_area .news_and_events_all_content .news_and_events .image_and_news_event_details .news_event_details a .dote {
   letter-spacing: 5px;
-  color: #fdc800;
+  color: #8cc63f;
   transition-duration: 0.4s;
 }
 .news_and_event_page .news_and_events_all_area .news_and_events_all_content .news_and_events .image_and_news_event_details .news_event_details a:hover {
@@ -3045,6 +2984,150 @@ i {
 }
 .news_and_event_page .news_and_events_all_area .news_and_events_all_content .news_and_events .image_and_news_event_details .news_event_details a:hover .dote {
   color: #431c46;
+}
+
+.about_area {
+  border: 0px solid red;
+  margin: 50px 0px;
+}
+.about_area .about_area_content {
+  border: 0px solid red;
+}
+.about_area .about_area_content .content_area {
+  border: 0px solid red;
+  margin-bottom: 50px;
+}
+.about_area .about_area_content .content_area .area_title {
+  border: 0px solid red;
+  margin-bottom: 30px;
+}
+.about_area .about_area_content .content_area .area_title .titile {
+  border: 0px solid red;
+  font-family: "Poppins-SemiBold";
+  font-size: 26px;
+  color: #431c46;
+}
+.about_area .about_area_content .content_area .area_content {
+  border: 0px solid red;
+}
+.about_area .about_area_content .content_area .area_content .content_text {
+  border: 0px solid red;
+}
+@media screen and (max-width: 575.9px) {
+  .about_area .about_area_content .content_area .area_content .content_text {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .about_area .about_area_content .content_area .area_content .content_text {
+    margin-bottom: 20px;
+  }
+}
+.about_area .about_area_content .content_area .area_content .content_text .text {
+  border: 0px solid red;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  line-height: 26px;
+  color: #431c46;
+}
+.about_area .about_area_content .content_area .area_content .content_image {
+  border: 0px solid red;
+}
+.about_area .about_area_content .content_area .area_content .content_image img {
+  border: 0px solid red;
+  width: 100%;
+}
+.about_area .about_area_content .content_area .gallery_area {
+  border: 0px solid red;
+}
+.about_area .about_area_content .content_area .gallery_area .gallery_content {
+  border: 0px solid red;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about_area .about_area_content .content_area .gallery_area .gallery_content .gallary_image {
+  border: 0px solid red;
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.teacher_details_area {
+  border: 0px solid red;
+  margin: 50px 0px;
+}
+.teacher_details_area .teacher_details_area_content {
+  border: 0px solid red;
+  background-color: #f5f5f5;
+  width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content {
+    width: 250px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.9px) {
+  .teacher_details_area .teacher_details_area_content {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .teacher_details_area .teacher_details_area_content {
+    width: 670px;
+  }
+}
+.teacher_details_area .teacher_details_area_content .teacher_details {
+  border: 0px solid red;
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .image {
+  border: 0px solid red;
+  width: 185px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content .teacher_details .image {
+    width: 125px;
+    height: 140px;
+  }
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .teacher_name {
+  border: 0px solid red;
+  margin: 20px 0px 10px 0px;
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .teacher_name .name_text {
+  border: 0px solid red;
+  font-family: "Poppins-SemiBold";
+  font-size: 26px;
+  color: #431c46;
+}
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content .teacher_details .teacher_name .name_text {
+    font-size: 18px;
+  }
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .all_textt {
+  border: 0px solid red;
+  margin: 5px 0px;
+}
+.teacher_details_area .teacher_details_area_content .teacher_details .all_textt .textt {
+  border: 0px solid red;
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  color: #431c46;
+}
+@media screen and (max-width: 575.9px) {
+  .teacher_details_area .teacher_details_area_content .teacher_details .all_textt .textt {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,22 +6,28 @@
     top: 82px;
     z-index: 9999999;
     @include xs {
-        display: none;
-        background-color: #dcdcdc;
-        position: relative;
-        right: -330px;
+        top: 54px;
+        background-color: $navy;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        // display: none;
+        right: -1000px;
+        opacity: 0;
+        visibility: hidden;
         transition-duration: 0.4s;
     }
     @include sm {
-        display: none;
-        background-color: #dcdcdc;
-
-    }
-    @include md {
-        top: 63px;
-    }
-    @include lg {
-        top: 69px;
+        top: 54px;
+        background-color: $navy;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        // display: none;
+        right: -1000px;
+        opacity: 0;
+        visibility: hidden;
+        transition-duration: 0.4s;
     }
     .nav_area_content {
         border: $border;
@@ -35,19 +41,24 @@
             flex-wrap: wrap;
             @include xs {
                 display: block;
-                gap: 5px;
-                display: inline-grid;
             }
             @include sm {
                 display: block;
-                gap: 5px;
-                display: inline-grid;
             }
             li {
                 border: $border;
                 align-items: center;
                 display: flex;
-
+                @include xs {
+                    border-bottom: 1px solid #696969;
+                    padding-bottom: 5px;
+                    margin: 10px 0px;
+                }
+                @include sm {
+                    border-bottom: 1px solid #696969;
+                    padding-bottom: 5px;
+                    margin: 10px 0px;
+                }
                 .nav_item {
                     border: $border;
                     font-family: $Poppins_Medium;
@@ -57,6 +68,16 @@
                     color: $navy;
                     padding: 7px 7px;
                     transition-duration: 0.4s;
+                    @include xs {
+                        color: $solid_white;
+                        font-family: $Poppins_Regular;
+                        width: 100%;
+                    }
+                    @include sm {
+                        color: $solid_white;
+                        font-family: $Poppins_Regular;
+                        width: 100%;
+                    }
                     &:hover {
                         background-color: $navy;
                         color: $solid_white;
@@ -69,13 +90,12 @@
 }
 
 // nav_area end
-// active_alass start
-.active_alass {
-    display: block;
-    position: fixed;
+
+// active_class start
+.active_class {
+    // display: block;
     right: 0px;
-    top: 54px;
-    width: 100%;
-    height: 100vh;
+    opacity: 1;
+    visibility: visible;
 }
-// active_alass end
+// active_class end
