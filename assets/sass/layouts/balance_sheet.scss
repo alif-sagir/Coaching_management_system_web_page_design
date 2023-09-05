@@ -1,0 +1,352 @@
+// balance_sheet start
+.balance_sheet {
+    border: $border;
+    width: 630px;
+    margin: auto;
+    padding-bottom: 50px;
+    // height: 3508px;
+
+    .balance_sheet_content {
+        border: $border;
+        // header_area start
+        .header_area {
+            border: $border;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0px;
+            .page_title {
+                border: $border;
+                // 
+                .title_text{
+                    font-size: 35px;
+                    line-height: 35px;
+                    // font-family: $Poppins_SemiBold;
+                    font-family: $Poppins_Bold;
+                }
+            }
+            .logo_area {
+                border: $border;
+                width: 100px;
+                align-items: center;
+                display: flex;
+                img {
+                    border: $border;
+                    width: 100%;
+                }
+            }
+        }
+        // header_area end
+
+        // customar_name_address_and_invoice_id_date_area start
+        .customar_name_address_and_invoice_id_date_area {
+            border: $border;
+            display: flex;
+            justify-content: space-between;
+            // customar_name_address_arer start
+            .customar_name_address_arer {
+                border: $border;
+                flex: 1;
+                margin-right: 100px;
+                .invoice_name {
+                    border: $border;
+                    margin-bottom: 8px;
+                    .invoice_text {
+                        border: $border;
+                        font-size: 22px;
+                        font-family: $Poppins_SemiBold;
+                    }
+                }
+                .customar_name_address {
+                    border: $border;
+                    .customar_name {
+                        border: $border;
+                        margin-bottom: 8px;
+                        .name_text {
+                            border: $border;
+                            font-family: $Poppins_SemiBold;
+                            font-size: 16px;
+                        }
+                    }
+                    .customar_address {
+                        border: $border;
+                        .address_text_area {
+                            border: $border;
+                            .address_text {
+                                border: $border;
+                                font-family: $Poppins_SemiBold;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            // customar_name_address_arer end
+            // invoice_id_date_area start
+            .invoice_id_date_area {
+                border: $border;
+                flex: 1;
+                margin-left: 100px;
+                // invoice_id_area start
+                .invoice_id_area {
+                    border: $border;
+                    display: flex;
+                    margin-bottom: 8px;
+                    justify-content: space-between;
+                    .invoice_title {
+                        border: $border;
+                        .title_text {
+                            border: $border;
+                            font-family: $Poppins_SemiBold;
+                            font-size: 16px;
+                        }
+                    }
+                    .invoice_id {
+                        border: $border;
+                        .id_text {
+                            border: $border;
+                            font-family: $Poppins_SemiBold;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                // invoice_id_area end
+                // date_area start
+                .date_area {
+                    border: $border;
+                    display: flex;
+                    justify-content: space-between;
+                    .date_title {
+                        border: $border;
+                        .title_text {
+                            border: $border;
+                            font-family: $Poppins_SemiBold;
+                            font-size: 16px;
+                        }
+                    }
+                    .date_number {
+                        border: $border;
+                        .date_text {
+                            border: $border;
+                            font-family: $Poppins_SemiBold;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                // date_area end
+            }
+            // invoice_id_date_area end
+        }
+        // customar_name_address_and_invoice_id_date_area end
+
+        // product_item_area start
+        .product_item_area {
+            border: $border;
+            margin: 28px 0px;
+
+            border-bottom: 1px solid black;
+
+            table {
+                border: $border;
+                width: 100%;
+                thead {
+                    border: $border;
+                    tr {
+                        border: $border;
+                        border: 3px solid orange;
+                        th {
+                            border: $border;
+                            font-size: 14px;
+                            font-family: $Poppins_Regular;
+                            padding: 5px;
+                        }
+                        .sl {
+                        }
+                        .price {
+                            width: 80px;
+                        }
+                        .qty {
+                            width: 80px;
+                        }
+                        .total {
+                            width: 80px;
+                        }
+                    }
+                }
+                tbody {
+                    border: $border;
+                    tr {
+                        border: $border;
+                        border-bottom: 1px solid black;
+                        td {
+                            border: $border;
+                            font-size: 13px;
+                            font-family: $Poppins_Regular;
+                            padding: 16px 5px 16px 7px;
+                        }
+                    }
+                }
+            }
+        }
+        // product_item_area end
+
+        // thank_and_payment_and_total_area start
+        .thank_and_payment_and_total_area {
+            border: $border;
+            display: flex;
+            justify-content: space-between;
+            // left_area start
+            .left_area {
+                border: $border;
+                flex: 1;
+                margin-right: 50px;
+                .thank_area {
+                    border: $border;
+                    margin-bottom: 20px;
+
+                    .thank_title {
+                        border: $border;
+                        font-family: $Poppins_SemiBold;
+                        font-size: 13px;
+                    }
+                }
+                .payment_info_area {
+                    border: $border;
+                    .payment_info_title_area {
+                        border: $border;
+
+                        margin-bottom: 10px;
+
+                        .payment_info_title {
+                            border: $border;
+                            font-family: $Poppins_SemiBold;
+                            font-size: 16px;
+                        }
+                    }
+                    .payment_info_content {
+                        border: $border;
+                        display: flex;
+                        // justify-content: space-between;
+                        .info_title {
+                            border: $border;
+                            width: 100px;
+                            .text {
+                                border: $border;
+
+                                font-size: 12px;
+                                font-family: "Poppins-Regular";
+                            }
+                        }
+                        .info_value {
+                            border: $border;
+                            .text {
+                                border: $border;
+                                font-size: 12px;
+                                font-family: "Poppins-Regular";
+                            }
+                        }
+                    }
+                }
+            }
+            // left_area end
+            //   right_area start
+            .right_area {
+                border: $border;
+                width: 200px;
+                // margin-left: 50px;
+                .total_area_start {
+                    border: $border;
+                    .total_content_area {
+                        border: $border;
+                        display: flex;
+                        margin-bottom: 5px;
+                        .content_title {
+                            border: $border;
+                            width: 100px;
+                            .text {
+                                border: $border;
+                                font-family: $Poppins_SemiBold;
+                                font-size: 13px;
+                            }
+                        }
+                        .content_value {
+                            border: $border;
+                            .text {
+                                border: $border;
+                                font-family: $Poppins_SemiBold;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                    .total_amount_area {
+                        border: $border;
+                        padding-top: 3px;
+                        border-top: 1px solid black;
+                        .content_title {
+                            .text {
+                                font-family: $Poppins_SemiBold;
+                                font-size: 16px;
+                            }
+                        }
+                        .content_value {
+                            .text {
+                                font-family: $Poppins_SemiBold;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            //   right_area end
+        }
+        // thank_and_payment_and_total_area end
+
+        // terms_and_condition_area_and_signeture_area start
+        .terms_and_condition_area_and_signeture_area{
+            border: $border;
+            display: flex;
+            // terms_and_condition_area start
+            .terms_and_condition_area{
+                border: $border;
+                flex: 1;
+                .title{
+                    border: $border;
+                    .title_text{
+                        border: $border;
+                        color: black;
+                        font-family: $Poppins_SemiBold;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                        margin-top: 20px;
+                    }
+                }
+                .text_area{
+                    border: $border;
+                    .text{
+                        border: $border;
+                        font-size: 12px;
+                        font-family: $Poppins_Regular;
+                    }
+                }
+            }
+            // terms_and_condition_area end
+            // signeture_area start
+             .signeture_area{
+                border: $border;
+                width: 320px;
+                margin-left: 20px;
+                text-align: center;
+                margin-top: 56px;
+                border-top: 2px solid black;
+                 .signeture_title{
+                     border: $border;
+                     font-family: $Poppins_SemiBold;
+                     font-size: 16px;
+                     margin-top: 10px;
+                 }
+             }
+            // signeture_area end
+        }
+        // terms_and_condition_area_and_signeture_area end
+    }
+}
+// balance_sheet end

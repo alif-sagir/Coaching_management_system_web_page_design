@@ -1,0 +1,186 @@
+// student_card start
+.student_card {
+    border: $border;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    .student_card_content {
+        border: $border;
+        padding: 7px;
+        width: 255px;
+        height: 406px;
+        margin: auto;
+        text-align: center;
+        background-color: white;
+        // school_logo start
+        .school_logo {
+            border: $border;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 15px;
+            img {
+                border: $border;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        // school_logo end
+
+        // school_name_area start
+        .school_name_area {
+            border: $border;
+            margin: 5px 0px;
+            .school_name_text {
+                border: $border;
+                font-size: 16px;
+                line-height: 16px;
+                font-family: $Poppins_SemiBold;
+            }
+        }
+        // school_name_area end
+        // address_area start
+        .address_area {
+            border: $border;
+            .address_text {
+                border: $border;
+                font-size: 12px;
+                font-family: $Poppins_Regular;
+            }
+        }
+        // address_area end
+        // phone_number_area start
+        .phone_number_area {
+            border: $border;
+            .phone_number_text {
+                border: $border;
+                font-size: 12px;
+                font-family: $Poppins_Regular;
+            }
+        }
+        // phone_number_area end
+        // student_image_area start
+        .student_image_area {
+            border: $border;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin: auto;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            img {
+                border: $border;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        // student_image_area end
+        // student_id_card_title_area start
+        .student_id_card_title_area {
+            border: $border;
+            background-color: rgb(193 0 0);
+            width: 135px;
+            border-radius: 4px;
+            margin: auto;
+
+            margin-bottom: 10px;
+
+            .student_id_card_title_text {
+                border: $border;
+                font-size: 13px;
+                line-height: 13px;
+                padding: 3px 0px;
+                font-family: $Poppins_SemiBold;
+                color: white;
+            }
+        }
+        // student_id_card_title_area end
+        // student_information_area start
+        .student_information_area {
+            border: $border;
+            width: 225px;
+            margin: auto;
+            // student_information_content start
+            .student_information_content {
+                border: $border;
+                display: flex;
+                .information_title {
+                    border: $border;
+                    .title_text {
+                        border: $border;
+                        font-size: 12px;
+                        font-family: $Poppins_Regular;
+                        margin-right: 5px;
+                        width: 92px;
+                        text-align: left;
+                        justify-content: space-between;
+                        display: flex;
+                        .text {
+                            border: $border;
+                        }
+                        .samecolon {
+                            border: $border;
+                        }
+                    }
+                }
+                .information_value {
+                    border: $border;
+                    .value_text {
+                        border: $border;
+                        font-size: 12px;
+                        font-family: $Poppins_Medium;
+                    }
+                }
+            }
+            // student_information_content end
+        }
+        // student_information_area end
+        // scanning_and_principal_signature_area start
+        .scanning_and_principal_signature_area {
+            border: $border;
+            display: flex;
+
+            padding: 0px 10px;
+
+            justify-content: space-between;
+            // scanning_area start
+            .scanning_area {
+                border: $border;
+                width: 130px;
+                height: 30px;
+                margin-top: 22px;
+                img {
+                    border: $border;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            // scanning_area end
+            // principal_signature_area start
+            .principal_signature_area {
+                border: $border;
+                margin-top: 37px;
+
+                .principal_signature_area_text {
+                    border: $border;
+                    font-size: 13px;
+                    font-family: $Poppins_Regular;
+                }
+            }
+            // principal_signature_area end
+        }
+        // scanning_and_principal_signature_area end
+    }
+}
+// student_card end
