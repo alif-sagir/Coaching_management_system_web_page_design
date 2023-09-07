@@ -3244,7 +3244,6 @@ i {
   display: flex;
   height: 100vh;
   justify-content: center;
-  background-color: rgb(230, 230, 230);
 }
 .student_card .student_card_content {
   border: 0px solid red;
@@ -3253,7 +3252,9 @@ i {
   height: 406px;
   margin: auto;
   text-align: center;
-  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .student_card .student_card_content .school_logo {
   border: 0px solid red;
@@ -3397,32 +3398,39 @@ i {
   border: 0px solid red;
   width: 630px;
   margin: auto;
-  padding-bottom: 50px;
 }
 .balance_sheet .balance_sheet_content {
   border: 0px solid red;
 }
-.balance_sheet .balance_sheet_content .header_area {
+.balance_sheet .balance_sheet_content .header_area_full {
+  border: 0px solid red;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.balance_sheet .balance_sheet_content .header_area_full .header_area {
   border: 0px solid red;
   display: flex;
   justify-content: space-between;
   padding: 30px 0px;
 }
-.balance_sheet .balance_sheet_content .header_area .page_title {
+.balance_sheet .balance_sheet_content .header_area_full .header_area .page_title {
   border: 0px solid red;
+  margin-bottom: 14px;
 }
-.balance_sheet .balance_sheet_content .header_area .page_title .title_text {
+.balance_sheet .balance_sheet_content .header_area_full .header_area .page_title .title_text {
   font-size: 35px;
   line-height: 35px;
   font-family: "Poppins-Bold";
 }
-.balance_sheet .balance_sheet_content .header_area .logo_area {
+.balance_sheet .balance_sheet_content .header_area_full .header_area .logo_area {
   border: 0px solid red;
   width: 100px;
   align-items: center;
   display: flex;
+  margin-bottom: 14px;
 }
-.balance_sheet .balance_sheet_content .header_area .logo_area img {
+.balance_sheet .balance_sheet_content .header_area_full .header_area .logo_area img {
   border: 0px solid red;
   width: 100%;
 }
@@ -3430,6 +3438,7 @@ i {
   border: 0px solid red;
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 .balance_sheet .balance_sheet_content .customar_name_address_and_invoice_id_date_area .customar_name_address_arer {
   border: 0px solid red;
@@ -3694,6 +3703,13 @@ i {
   font-family: "Poppins-SemiBold";
   font-size: 16px;
   margin-top: 10px;
+}
+.balance_sheet .balance_sheet_content .bottom_bg_area {
+  height: 30px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

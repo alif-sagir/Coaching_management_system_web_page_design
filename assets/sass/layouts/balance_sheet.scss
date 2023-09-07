@@ -3,35 +3,44 @@
     border: $border;
     width: 630px;
     margin: auto;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
     // height: 3508px;
 
     .balance_sheet_content {
         border: $border;
+
         // header_area start
-        .header_area {
+        .header_area_full {
             border: $border;
-            display: flex;
-            justify-content: space-between;
-            padding: 30px 0px;
-            .page_title {
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            .header_area {
                 border: $border;
-                // 
-                .title_text{
-                    font-size: 35px;
-                    line-height: 35px;
-                    // font-family: $Poppins_SemiBold;
-                    font-family: $Poppins_Bold;
-                }
-            }
-            .logo_area {
-                border: $border;
-                width: 100px;
-                align-items: center;
                 display: flex;
-                img {
+                justify-content: space-between;
+                padding: 30px 0px;
+                .page_title {
                     border: $border;
-                    width: 100%;
+                    margin-bottom: 14px;
+                    //
+                    .title_text {
+                        font-size: 35px;
+                        line-height: 35px;
+                        // font-family: $Poppins_SemiBold;
+                        font-family: $Poppins_Bold;
+                    }
+                }
+                .logo_area {
+                    border: $border;
+                    width: 100px;
+                    align-items: center;
+                    display: flex;
+                    margin-bottom: 14px;
+                    img {
+                        border: $border;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -42,6 +51,7 @@
             border: $border;
             display: flex;
             justify-content: space-between;
+            margin-top: 30px;
             // customar_name_address_arer start
             .customar_name_address_arer {
                 border: $border;
@@ -301,16 +311,16 @@
         // thank_and_payment_and_total_area end
 
         // terms_and_condition_area_and_signeture_area start
-        .terms_and_condition_area_and_signeture_area{
+        .terms_and_condition_area_and_signeture_area {
             border: $border;
             display: flex;
             // terms_and_condition_area start
-            .terms_and_condition_area{
+            .terms_and_condition_area {
                 border: $border;
                 flex: 1;
-                .title{
+                .title {
                     border: $border;
-                    .title_text{
+                    .title_text {
                         border: $border;
                         color: black;
                         font-family: $Poppins_SemiBold;
@@ -319,9 +329,9 @@
                         margin-top: 20px;
                     }
                 }
-                .text_area{
+                .text_area {
                     border: $border;
-                    .text{
+                    .text {
                         border: $border;
                         font-size: 12px;
                         font-family: $Poppins_Regular;
@@ -330,23 +340,33 @@
             }
             // terms_and_condition_area end
             // signeture_area start
-             .signeture_area{
+            .signeture_area {
                 border: $border;
                 width: 320px;
                 margin-left: 20px;
                 text-align: center;
                 margin-top: 56px;
                 border-top: 2px solid black;
-                 .signeture_title{
-                     border: $border;
-                     font-family: $Poppins_SemiBold;
-                     font-size: 16px;
-                     margin-top: 10px;
-                 }
-             }
+                .signeture_title {
+                    border: $border;
+                    font-family: $Poppins_SemiBold;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+            }
             // signeture_area end
         }
         // terms_and_condition_area_and_signeture_area end
+
+        // bottom_bg_area start
+        .bottom_bg_area{
+            height: 30px;
+            margin-top: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        // bottom_bg_area end
     }
 }
 // balance_sheet end
