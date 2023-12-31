@@ -1,0 +1,376 @@
+// edit nav_area start
+.edit_nav_area {
+    border: $border;
+    position: sticky;
+    top: 0px;
+    background-color: $solid_white;
+    border-bottom: 1px solid $navy;
+    z-index: 1;
+
+    @include xs {
+        padding: 10px 0px;
+    }
+    @include sm {
+        padding: 10px 0px;
+    }
+    @include md {
+        padding: 10px 0px;
+    }
+    @include lg {
+        padding: 10px 0px;
+    }
+    .nav_area_content {
+        border: $border;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // padding: 10px 0px;
+        // logo_area start
+        .logo_area {
+            border: $border;
+            width: 160px;
+            height: 50px;
+            img {
+                border: $border;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        // logo_area end
+        // menu_and_search_area start
+        .menu_and_search_area {
+            border: $border;
+            display: flex;
+
+            // menu_area start
+            .menu_area {
+                border: $border;
+                align-items: center;
+                display: flex;
+                @include xs {
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    background: #0d6efd7d;
+                    display: none;
+                }
+                @include sm {
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    background: #0d6efd7d;
+                    display: none;
+                }
+                @include md {
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    background: #0d6efd7d;
+                    display: none;
+                }
+                @include lg {
+                    width: 100vw;
+                    height: 100vh;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    background: #0d6efd7d;
+                    display: none;
+                }
+                // @include sm {
+                //     position: fixed;
+                //     width: 100vw;
+                //     top: 105px;
+                //     left: 0px;
+                //     background: $solid_white;
+                //     padding: 20px;
+                //     position: absolute;
+                //     width: 70%;
+                //     height: 100vh;
+                //     position: fixed;
+                //     top: 0px;
+                //     align-items: unset;
+                //     display: none;
+                // }
+                // @include md {
+                //     position: fixed;
+                //     width: 100vw;
+                //     top: 105px;
+                //     left: 0px;
+                //     background: $solid_white;
+                //     padding: 20px;
+                //     position: absolute;
+                //     width: 70%;
+                //     height: 100vh;
+                //     position: fixed;
+                //     top: 0px;
+                //     align-items: unset;
+                //     display: none;
+                // }
+                // @include lg {
+                //     position: fixed;
+                //     width: 100vw;
+                //     top: 105px;
+                //     left: 0px;
+                //     background: $solid_white;
+                //     padding: 20px;
+                //     position: absolute;
+                //     width: 70%;
+                //     height: 100vh;
+                //     position: fixed;
+                //     top: 0px;
+                //     align-items: unset;
+                //     display: none;
+                // }
+
+                ul {
+                    border: $border;
+                    display: flex;
+                    gap: 25px;
+                    @include xs {
+                        display: block;
+                        background-color: $solid_white;
+                        width: 70%;
+                        height: 100%;
+                        padding: 20px;
+                        overflow: scroll;
+                    }
+                    @include sm {
+                        display: block;
+                        background-color: $solid_white;
+                        width: 70%;
+                        height: 100%;
+                        padding: 20px;
+                        overflow: scroll;
+                    }
+                    @include md {
+                        display: block;
+                        background-color: $solid_white;
+                        width: 70%;
+                        height: 100%;
+                        padding: 20px;
+                        overflow: scroll;
+                    }
+                    @include lg {
+                        display: block;
+                        background-color: $solid_white;
+                        width: 70%;
+                        height: 100%;
+                        padding: 20px;
+                        overflow: scroll;
+                    }
+                    // @include sm {
+                    //     display: block;
+                    // }
+                    // @include md {
+                    //     display: block;
+                    // }
+                    // @include lg {
+                    //     display: block;
+                    // }
+                    li {
+                        border: $border;
+                        position: relative;
+                        .nav_item {
+                            border: $border;
+                            font-family: $Poppins_Medium;
+                            font-size: 16px;
+                            text-transform: capitalize;
+                            color: $navy;
+                            padding: 25px 0px;
+                            border-top: 3px solid transparent;
+                            @include xs {
+                                border-top: unset;
+                            }
+                            @include sm {
+                                border-top: unset;
+                            }
+                            @include md {
+                                border-top: unset;
+                            }
+                            @include lg {
+                                border-top: unset;
+                            }
+                            transition-duration: 0.4s;
+
+                            &:hover {
+                                width: 100%;
+                                border-top: 3px solid $navy;
+                                @include xs {
+                                    border-top: unset;
+                                }
+                                @include sm {
+                                    border-top: unset;
+                                }
+                                @include md {
+                                    border-top: unset;
+                                }
+                                @include lg {
+                                    border-top: unset;
+                                }
+                            }
+                            i {
+                                border: $border;
+                                font-size: 16px;
+                            }
+                            @include xs {
+                                padding: 5px 0px;
+                            }
+                            @include sm {
+                                padding: 5px 0px;
+                            }
+                            @include md {
+                                padding: 5px 0px;
+                            }
+                            @include lg {
+                                padding: 5px 0px;
+                            }
+                        }
+                        &:hover {
+                            .inner_ul {
+                                display: block;
+                            }
+                        }
+                        .inner_ul {
+                            border: $border;
+                            display: block;
+                            width: 200px;
+                            padding: 20px 15px;
+                            background: $solid_white;
+                            box-shadow: 0px 0px 17px -6px #454545;
+                            display: none;
+                            position: absolute;
+                            top: 78px;
+                            @include xs {
+                                top: unset;
+                                z-index: 1;
+                                width: 100%;
+                                position: unset;
+                            }
+                            @include sm {
+                                top: unset;
+                                z-index: 1;
+                                width: 100%;
+                                position: unset;
+                            }
+                            @include md {
+                                top: unset;
+                                z-index: 1;
+                                width: 100%;
+                                position: unset;
+                            }
+                            @include lg {
+                                top: unset;
+                                z-index: 1;
+                                width: 100%;
+                                position: unset;
+                            }
+                            li {
+                                border: $border;
+                                border-bottom: 1px solid black;
+                                .inner_nav_item {
+                                    border: $border;
+                                    font-family: $Poppins_Medium;
+                                    font-size: 16px;
+                                    text-transform: capitalize;
+                                    color: $navy;
+                                    padding: 10px 0px;
+                                    i {
+                                        border: $border;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .extra_width {
+                    width: 30%;
+                   background-color: #431c4663;
+                    position: absolute;
+                    right: 0px;
+                    height: 100vh;
+                    top: 0px;
+                    display: none;
+                    @include xs{
+                        display: block;
+                    }
+                    @include sm{
+                        display: block;
+                    }
+                    @include md{
+                        display: block;
+                    }
+                    @include lg{
+                        display: block;
+                    }
+                }
+            }
+            .active_button {
+                display: block;
+            }
+            // menu_area end
+            // search_area start
+            .search_area {
+                border: $border;
+                align-items: center;
+                display: flex;
+                margin-left: 25px;
+                .search_icon {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    border: 1px solid $navy;
+                    border-radius: 50%;
+                    padding: 12px;
+                    i {
+                        border: $border;
+                        font-size: 18px;
+                        color: $navy;
+                    }
+                }
+            }
+            // search_area end
+
+            // menu_area_icon start
+            .menu_area_icon {
+                border: $border;
+                align-items: center;
+                display: flex;
+                margin-left: 30px;
+                display: none;
+                @include xs {
+                    align-items: center;
+                    display: flex;
+                }
+                @include sm {
+                    align-items: center;
+                    display: flex;
+                }
+                @include md {
+                    align-items: center;
+                    display: flex;
+                }
+                @include lg {
+                    align-items: center;
+                    display: flex;
+                }
+                i {
+                    border: $border;
+                    font-size: 20px;
+                    color: $navy;
+                }
+            }
+            // menu_area_icon end
+        }
+        // menu_and_search_area end
+    }
+}
+// edit nav_area end
